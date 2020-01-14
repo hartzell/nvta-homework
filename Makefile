@@ -4,7 +4,7 @@ SHELL:=/usr/bin/env bash
 lint:
 	# mypy nvta_homework tests/**/*.py
 	flake8 --config=setup.cfg .
-	yapf -d -r nvta-homework tests
+	yapf -d -r nvta-homework tests docs
 	doc8 -q docs
 
 .PHONY: unit
