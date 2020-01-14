@@ -30,10 +30,10 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
-yapf = "^0.29.0"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.750"
+yapf = "^0.29.0"
 
 wemake-python-styleguide = "^0.13.3"
 flake8-pytest = "^1.3"
