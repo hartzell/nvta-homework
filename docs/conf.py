@@ -19,8 +19,8 @@ import tomlkit
 
 sys.path.insert(0, os.path.abspath('..'))
 
-
 # -- Project information -----------------------------------------------------
+
 
 def _get_project_meta():
     with open('../pyproject.toml') as pyproject:
@@ -38,7 +38,6 @@ author = 'alerce.com'
 version = pkg_meta['version']
 # The full version, including alpha/beta/rc tags
 release = version
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -111,7 +110,6 @@ add_module_names = False
 autodoc_default_options = {
     'show-inheritance': True,
 }
-
 
 # -- Options for HTML output -------------------------------------------------
 
