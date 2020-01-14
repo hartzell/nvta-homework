@@ -1250,6 +1250,14 @@ radon = ">=4.0,<5.0"
 typing_extensions = ">=3.6,<4.0"
 
 [[package]]
+category = "main"
+description = "A formatter for Python code."
+name = "yapf"
+optional = false
+python-versions = "*"
+version = "0.29.0"
+
+[[package]]
 category = "dev"
 description = "Backport of pathlib-compatible object wrapper for zip files"
 marker = "python_version < \"3.8\""
@@ -1266,7 +1274,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "ca3b02fbe8e7ca7df9b4439cc852c38a11c88422eb63e0d5ec9b313ba25b78e1"
+content-hash = "26cb0494316ffd9b30c4785ad59af2029808782f3a102e8538535825d45f760c"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -1683,6 +1691,7 @@ restructuredtext-lint = [
     {file = "ruamel.yaml.clib-0.2.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:550168c02d8de52ee58c3d8a8193d5a8a9491a5e7b2462d27ac5bf63717574c9"},
     {file = "ruamel.yaml.clib-0.2.0-cp37-cp37m-win32.whl", hash = "sha256:57933a6986a3036257ad7bf283529e7c19c2810ff24c86f4a0cfeb49d2099919"},
     {file = "ruamel.yaml.clib-0.2.0-cp37-cp37m-win_amd64.whl", hash = "sha256:b1b7fcee6aedcdc7e62c3a73f238b3d080c7ba6650cd808bce8d7761ec484070"},
+    {file = "ruamel.yaml.clib-0.2.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:be018933c2f4ee7de55e7bd7d0d801b3dfb09d21dad0cce8a97995fd3e44be30"},
     {file = "ruamel.yaml.clib-0.2.0.tar.gz", hash = "sha256:b66832ea8077d9b3f6e311c4a53d06273db5dc2db6e8a908550f3c14d67e718c"},
 ]
 safety = [
@@ -1796,6 +1805,10 @@ wcwidth = [
 wemake-python-styleguide = [
     {file = "wemake-python-styleguide-0.13.3.tar.gz", hash = "sha256:dc7bff88777e9183c636e07da6b99ee36383a8c10e3968be82f61f25f1627e0c"},
     {file = "wemake_python_styleguide-0.13.3-py3-none-any.whl", hash = "sha256:4705b9f963053628ed6800a922622f9b0491a9e23986707b612f033009e48c7c"},
+]
+yapf = [
+    {file = "yapf-0.29.0-py2.py3-none-any.whl", hash = "sha256:cad8a272c6001b3401de3278238fdc54997b6c2e56baa751788915f879a52fca"},
+    {file = "yapf-0.29.0.tar.gz", hash = "sha256:712e23c468506bf12cadd10169f852572ecc61b266258422d45aaf4ad7ef43de"},
 ]
 zipp = [
     {file = "zipp-0.6.0-py2.py3-none-any.whl", hash = "sha256:f06903e9f1f43b12d371004b4ac7b06ab39a44adc747266928ae6debfa7b3335"},
