@@ -22,12 +22,12 @@ def test_successful_loading(mapping_file, count, expected):
     mappings = TranscriptMappings()
     mappings.read_tsv(mapping_file)
     assert len(mappings.mappings) == count
-    for mapping in mappings.mappings:
+    for tr_name in mappings.mappings.keys():
         tm = expected.pop(0)
-        assert mapping.transcript_name == tm[0]
-        assert mapping.chromosome_name == tm[1]
-        assert mapping.start == tm[2]
-        assert mapping.cigar == tm[3]
+        assert mappings.mappings[tr_name].transcript_name == tm[0]
+        assert mappings.mappings[tr_name].chromosome_name == tm[1]
+        assert mappings.mappings[tr_name].start == tm[2]
+        assert mappings.mappings[tr_name].cigar == tm[3]
 
 
 @pytest.mark.parametrize(('mapping_file', 'exception'), [
@@ -38,6 +38,14 @@ def test_successful_loading(mapping_file, count, expected):
     (
         'sample_data/transcript_mapping_bad_rows.tsv',
         r'^.*Bad number of columns.*$',
+    ),
+    (
+        'sample_data/transcript_mapping_bad_cigar.tsv',
+        r'^.*Unexpected alignment character: Q.*$',
+    ),
+    (
+        'sample_data/tm_multiple_mapping.tsv',
+        r'^.*Multiple mappings for TR1.*$',
     ),
 ])
 def test_failures_while_loading(mapping_file, exception):
