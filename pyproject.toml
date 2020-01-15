@@ -30,6 +30,8 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
+click = "^7.0"
+pytest-click = "^0.3"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.750"
@@ -51,3 +53,6 @@ sphinx-autodoc-typehints = "<1.11"
 doc8 = "^0.8"
 m2r = "^0.2"
 tomlkit = "^0.5"
+
+[tool.poetry.scripts]
+hw = 'nvta_homework.main:main'
