@@ -13,10 +13,9 @@ def test_cli():
     runner = CliRunner()
     result = runner.invoke(main, ['lift', '--mf', mf, '--qf', qf])
     assert result.exit_code == 0
-    # TODO: result.output is **empty**, but should not be...
-    # with open('sample_data/exhaustive_result.tsv') as the_file:
-    #     expected = the_file.read()
-    #     assert result.output == expected
+    with open('sample_data/exhaustive_result.tsv') as the_file:
+        expected = the_file.read()
+        assert result.output == expected
 
 
 def test_cli_bad_cigar():
