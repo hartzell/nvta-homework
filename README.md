@@ -115,7 +115,7 @@ The implementation is (believed to be) correct in the sense that
     TR1	22	CHR1	41
     TR1	23	CHR1	42
     TR1	24	CHR1	43
-    [vTR2	0	CHR2	10
+    TR2	0	CHR2	10
     TR2	1	CHR2	11
     TR2	2	CHR2	12
     TR2	3	CHR2	13
