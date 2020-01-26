@@ -196,7 +196,7 @@ test drive.  It worked out well, and/but
 
 Although I was working alone, I followed a
 [gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
-inspired workflow, each unit of work happened on it's own branch, was
+inspired workflow, each unit of work happened on its own branch, was
 pushed to GitHub, and was merged after its Pull Request passed its
 tests.  The [GitHub network
 graph](https://github.com/hartzell/nvta-homework/network) gives a nice
@@ -226,7 +226,7 @@ graphical overview of the work sequence.
 
 # Installation
 
-This project uses poetry to manage it's dependencies and *etc*....
+This project uses poetry to manage its dependencies and *etc*....
 While poetry makes it simple to upload the project to PyPi, I haven't
 done so.
 
